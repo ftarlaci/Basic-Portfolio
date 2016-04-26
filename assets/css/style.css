@@ -1,22 +1,45 @@
 * {
   box-sizing: border-box;
-  text-align: center;
+  margin: 0;
+}
+#fixed {
+
 }
 
 /* YOUR CSS GOES HERE*/
-
+html
 body {
-	width: 960px;
-	height: 440;
 	background-size: 960px 700px;
-	background-repeat: no repeat;
 	box-sizing: border-box;
-	z-index: -5;	
+	z-index: -5;
+	font-family: Times;	
+	width: auto;
+	height: 100%;
+	margin: 0 auto;
+
 }
-header {
-	background-color: #4aaaa5;
+
+a {
+	color: #777777;
+	text-decoration: none;
+}
+
+a hover {
 	color: #4aaaa5;
-	padding: 20px;
+}
+.container {
+	width: auto;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border-style: solid;
+	border-bottom:2px solid #dddddd;
+	color: #4aaaa5;
 	margin-bottom: 20px;
 	
 }
@@ -25,30 +48,44 @@ section {
 	background: #ccc;
 	margin-bottom: 20px;
 }
-#left {
-	float: left;
-	width: 33.3%;
-	background: #666;
-	color: #fff;
+
+.title {
+	width: 960px;
+	margin: 0 auto;
+
 }
-#middle {
-	float: left;
-	width: 33.3%;
-	background: #888;
-	color: #fff;
+
+.navMenu {
+	width: auto;
+	background-color: #ffffff;
+	text-align: right;
+	text-decoration: bold 
+	border-bottom: 2px solid #cccccc;
+} 
+.navMenu ul {
+	list-style-type: none;
+	padding: 20px 0px 20px 0px;
 }
-#right {
-	float: left;
-	width: 33.3%;
-	background: #666;
-	color: #fff;
+
+.navMenu li {
+	display: inline;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
-#full {
-	clear: both;
-	width: 100%;
-	background: #eee;
-	overflow: auto;
+
+h1 {margin: 0px;
+padding-left: 20px;
+padding-right: 20px
+text-color: black;
+text-align: left;
 }
+
+h2 {
+
+}
+
+
 #division {
 	background: #6ea3da;
 	padding: 20px;
@@ -64,8 +101,8 @@ aside {
 	border: 1px solid #eee;
 }
 footer {
-	* {
 	margin: 0;
+	text-align: center;
 }
 html, body {
 	height: 100%;
