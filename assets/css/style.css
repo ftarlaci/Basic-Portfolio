@@ -2,21 +2,17 @@
   box-sizing: border-box;
   margin: 0;
 }
-#fixed {
 
-}
-
-/* YOUR CSS GOES HERE*/
 html
+body {	
+	height: 100%;
+}
 body {
-	background-size: 960px 700px;
-	box-sizing: border-box;
-	z-index: -5;
-	font-family: Times;	
+	background-image: url(../assets/images/background-image.jpg);
+	font-family: Times;
 	width: auto;
 	height: 100%;
 	margin: 0 auto;
-
 }
 
 a {
@@ -24,13 +20,21 @@ a {
 	text-decoration: none;
 }
 
-a hover {
+a:hover {
 	color: #4aaaa5;
 }
 .container {
 	width: auto;
 	margin: 0 auto;
 }
+
+.body-text {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	margin-bottom: -65px;
+}
+
 
 header {
 	background-color: #ffffff;
@@ -39,36 +43,46 @@ header {
 	border-width: 0px;
 	border-style: solid;
 	border-bottom:2px solid #dddddd;
-	color: #4aaaa5;
-	margin-bottom: 20px;
-	
-}
-section {
-	padding: 20px;
-	background: #ccc;
-	margin-bottom: 20px;
+	margin-bottom: 20px;	
 }
 
-.title {
+hr {
+	height: 2px;
+	background: #cccccc;
+	font-size: 0;
+	border: 0;
+	width: 100%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.header-container {
 	width: 960px;
 	margin: 0 auto;
-
 }
 
-.profile-pic {
-	width: 200px;
-	height: 200px;
-	margin-bottom: 0px;
-	
+.FullName {
+	font-size: 28px;
+	font-weight: bold;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-family: 'Times New Roman';
+	padding: 15px;
+	float: left;
+	position: relative;
 }
 
 .navMenu {
 	width: auto;
 	background-color: #ffffff;
 	text-align: right;
-	text-decoration: bold 
-	border-bottom: 2px solid #cccccc;
-} 
+}
+
+.navMenu ul {
+	list-style-type: none;
+	text-align: right;
+}
+
 .navMenu ul {
 	list-style-type: none;
 	padding: 20px 0px 20px 0px;
@@ -81,59 +95,239 @@ section {
 	padding-right: 20px;
 }
 
-.sidebar-links{
-	width: 10px;
-	height: 10px;
-	float: right;
-}
+.navMenu li {
 
-}
-
-h1 {margin: 0px;
-padding-left: 20px;
-padding-right: 20px
-text-color: black;
-text-align: left;
 }
 
 h2 {
-
-}
-
-
-#division {
-	background: #6ea3da;
-	padding: 20px;
-	margin-top: 20px;
-}
-aside {
-	float: left;
-	width: 33%;
-	margin-left: 30px;
-	padding: 20px;
-	height: 200px;
-	background: #fff;
-	border: 1px solid #eee;
-}
-footer {
-	margin: 0;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: 'Times, Times New Roman';
+	color: #4aaaa5;
 	text-align: center;
 }
-html, body {
-	height: 100%;
+
+.main-paragraph {
+	width: 650px;
+	margin:0px;
+	color: #777777;
+	display: block;
+	float: left;
 	background-color: #ffffff;
-	border-color: #cccccc;
-	content: #ffffff;
+	padding: 20px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #dddddd;
+	margin-bottom: 40px;
 }
-.wrapper {
-	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 100%;
-	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+
+.main-paragraph-title {
+	padding: 5px 5px 0px 0px;
+	margin-bottom: 10px;
 }
-.footer, .push {
+
+#profile-pic {
+	height: auto;
+	width: 200px;
+	margin: 0px 20px 20px 0px;
+	float: left;
+}
+
+#about-me {
+	width: auto;
+	max-width: 50%;
+	display: inline;
+	padding: 20px 20px 20px 20px;
+	line-height: 1.5em;
+}
+
+/*Portfolio */
+
+.image-left {
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.image-right {
+	display: inline-block;
+	float:right;
+	margin:10px;
+	position: relative;
+	margin-bottom: 25px;
+}
+.image-left:hover {
+	display: inline-block;
+	float:left;
+	margin: 10px;
+	position: relative;
+	margin-bottom: 25px;
+	opacity: 0.8;
+
+}
+.image-right:hover {
+	display: inline-block;
+	float:left;
+	margin: 10px;
+	position: relative;
+	margin-bottom: 25px;
+	opacity: 0.8;
+}
+
+.img-caption {
+	position: absolute;
+	background-color: #4aaaa5
+	padding-top: 15px;
+	bottom: 20px;
+	width: 100%;
+}
+
+.img-caption h4 {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: 'Times, Times New Roman';
+	text-align:center;
+}
+
+/* Contact */
+
+input[type-text] {
+	width: 100px;
+	text-indent: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #dddddd;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #dddddd;
+}
+
+input[type=submit] {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 7px 25px 7px 25px;
+	border: 0px;
+}
+
+input[type=submit]:hover {
+	background-color: #DB8B23;
+	color: #ffffff;
+	padding: 7px 25px 7px 25px;
+	border: 0px;
+}
+
+/*sidebar */
+
+.sidebar hr{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidebar-title {
+	margin-top: 25px;
+}
+
+.sidebar-links {
+	margin: 10px 0px 10px 0px;
+}
+
+.sidebar-image {
+	width: 64px;
+	heigth: 64px;
+}
+
+.sidebar-image:hover {
+	width: 64px;
+	height:64px;
+	background: rgba(0,0,0,0.3);
+}
+
+.sidebar ul li {
+	display: inline;
+	padding: 0px;
+}
+
+/* wrapper */
+
+.body-text:after {
+	content: "";
+	display: block;
+}
+
+.Copyright,
+.body-text:after {
+	height: 65px;
+}
+.Copyright {
 	background-color: #666666;
-	height: 155px; 
-	position: fixed; /* .push must be the same height as .footer */
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	margin: 0px;
+	border-top: 5px;
+	border-style: solid;
+	border-color: #4aaaa5;
+	line-height: 65px;
+	clear: both;
 }
+
+#Contact-Copyright {
+	position: fixed;
+	bottom: 0;
+	width: 100;
+	background-color: #666666;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	margin: 0px;
+	border-top: 5px;
+	border-style: solid;
+	border-color: #4aaaa5;
+	line-height: 65px;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
