@@ -55,6 +55,13 @@ section {
 
 }
 
+.profile-pic {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 0px;
+	
+}
+
 .navMenu {
 	width: auto;
 	background-color: #ffffff;
@@ -72,6 +79,14 @@ section {
 	margin: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.sidebar-links{
+	width: 10px;
+	height: 10px;
+	float: right;
+}
+
 }
 
 h1 {margin: 0px;
@@ -118,6 +133,7 @@ html, body {
 }
 .footer, .push {
 	background-color: #666666;
-	height: 155px; /* .push must be the same height as .footer */
+	height: 155px; 
+	position: fixed; /* .push must be the same height as .footer */
 }
 
