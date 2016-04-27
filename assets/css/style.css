@@ -9,7 +9,7 @@ body {
 }
 body {
 	background-image: url(../assets/images/background-image.jpg);
-	font-family: Times;
+	font-family: 'Times', 'Arial';
 	width: auto;
 	height: 100%;
 	margin: 0 auto;
@@ -80,11 +80,6 @@ hr {
 
 .navMenu ul {
 	list-style-type: none;
-	text-align: right;
-}
-
-.navMenu ul {
-	list-style-type: none;
 	padding: 20px 0px 20px 0px;
 }
 
@@ -103,6 +98,14 @@ h2 {
 	font-size: 26px;
 	font-weight: bold;
 	font-family: 'Times, Times New Roman';
+	color: #4aaaa5;
+	text-align: left;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: 'Times" Times New Roman';
 	color: #4aaaa5;
 	text-align: center;
 }
@@ -164,7 +167,7 @@ h2 {
 	margin: 10px;
 	position: relative;
 	margin-bottom: 25px;
-	opacity: 0.8;
+	opacity: 0.7;
 
 }
 .image-right:hover {
@@ -173,14 +176,14 @@ h2 {
 	margin: 10px;
 	position: relative;
 	margin-bottom: 25px;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .img-caption {
 	position: absolute;
 	background-color: #4aaaa5
 	padding-top: 15px;
-	bottom: 20px;
+	padding-bottom: 15px;
 	width: 100%;
 }
 
@@ -233,6 +236,19 @@ input[type=submit]:hover {
 
 /*sidebar */
 
+.sidebar {
+	width: 270px;
+	margin:0px;
+	padding: 0px;
+	float: right;
+	text-align: center;
+	background-color: #ffffff;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #dddddd;
+	display: inline-block;
+}
+
 .sidebar hr{
 	width: 80%;
 	margin-left: auto;
@@ -249,7 +265,7 @@ input[type=submit]:hover {
 
 .sidebar-image {
 	width: 64px;
-	heigth: 64px;
+	height: 64px;
 }
 
 .sidebar-image:hover {
@@ -302,32 +318,3 @@ input[type=submit]:hover {
 	line-height: 65px;
 	clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
